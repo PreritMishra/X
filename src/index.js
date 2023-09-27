@@ -8,4 +8,6 @@ app.listen(3000, async()=> {
     console.log("Server started");
     await connect();
     console.log("Mongodb connected");
+    let ser = new service();
+    await ser.create({content: "capital #FUN an #CODE"})
 });
